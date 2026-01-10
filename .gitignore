@@ -1,6 +1,15 @@
+# Dados do banco de dados (Docker)
+postgres_data/
+
+# Logs e arquivos temporários do Airflow
 airflow/logs/
 airflow/plugins/
-dataset_projeto_DE1/
-postgres_data/
 __pycache__/
+
+# Dados sensíveis/volumosos
+dataset_projeto_DE1/
+*.csv
+
+# Ambientes virtuais
+venv/
 .env
