@@ -1,0 +1,6 @@
+airflow/logs/
+airflow/plugins/
+dataset_projeto_DE1/
+postgres_data/
+__pycache__/
+.env
