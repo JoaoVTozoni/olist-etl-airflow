@@ -20,21 +20,22 @@ O fluxo de dados foi dividido em duas etapas principais para facilitar a manuten
 Para rodar o projeto localmente, é necessário ter o Docker instalado e seguir estes passos:
 
 1. Configuração do ambiente:
-
+```
 git clone https://github.com/seu-usuario/projeto-de-olist-airflow.git
 cd projeto-de-olist-airflow
 docker compose up -d
-
+```
 2. Inicialização do Airflow (necessário apenas na primeira vez):
-
+```
 docker compose run --rm airflow-webserver airflow db init
 docker compose run --rm airflow-webserver airflow users create --username airflow --firstname Admin --lastname User --role Admin --email admin@example.com --password airflow
-
+```
 3. Execução: Acesse o painel do Airflow em http://localhost:8080 com as credenciais criadas. Ative a DAG olist_etl_pipeline e inicie o processamento manual.
 
 4. Verificação dos resultados
 Após a conclusão das tarefas, os dados inseridos podem ser validados diretamente no container do banco de dados:
-
+```
 docker exec -it projeto_de1-postgres-1 psql -U airflow -c "SELECT * FROM olist_orders LIMIT 5;"
+```
 
 
