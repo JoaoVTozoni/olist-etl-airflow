@@ -21,8 +21,8 @@ Para rodar o projeto localmente, é necessário ter o Docker instalado e seguir 
 
 1. Configuração do ambiente:
 ```
-git clone https://github.com/seu-usuario/projeto-de-olist-airflow.git
-cd projeto-de-olist-airflow
+git clone https://github.com/JoaoVTozoni/olist-etl-airflow.git
+cd olist-etl-airflow
 docker compose up -d
 ```
 2. Inicialização do Airflow (necessário apenas na primeira vez):
