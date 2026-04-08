@@ -1,4 +1,4 @@
-# Olist ETL Pipeline com Apache Airflow
+# Olist ETL Pipeline (Arquitetura, Demonstração e Passo a Passo de Execução)
 
 Pipeline de ETL dos dados públicos do Olist, orquestrado com Apache Airflow e armazenado em PostgreSQL, com toda a infraestrutura containerizada via Docker.
 
