@@ -42,6 +42,7 @@ Antes de começar, instale:
 
 ### Dados carregados no PostgreSQL
 
+!(imgs/select_command.png)
 ![Resultado do SELECT](imgs/select_result.png)
 
 ## Como executar
