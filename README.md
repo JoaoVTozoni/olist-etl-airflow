@@ -94,7 +94,14 @@ Todos os serviços devem aparecer com status `running`.
 
 ```bash
 docker compose run --rm airflow-webserver airflow db init
+```
 
+**Windows (CMD/PowerShell):**
+
+docker compose run --rm airflow-webserver airflow users create --username airflow --firstname Admin --lastname User --role Admin --email admin@example.com --password airflow
+
+**Linux/Mac:**
+```bash
 docker compose run --rm airflow-webserver airflow users create \
   --username airflow \
   --firstname Admin \
@@ -103,8 +110,6 @@ docker compose run --rm airflow-webserver airflow users create \
   --email admin@example.com \
   --password airflow
 ```
-
----
 
 ### Passo 5 — Acessar o painel e executar
 
