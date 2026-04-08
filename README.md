@@ -98,7 +98,9 @@ docker compose run --rm airflow-webserver airflow db init
 
 **Windows (CMD/PowerShell):**
 
+'''bash
 docker compose run --rm airflow-webserver airflow users create --username airflow --firstname Admin --lastname User --role Admin --email admin@example.com --password airflow
+'''
 
 **Linux/Mac:**
 ```bash
